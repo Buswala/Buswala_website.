@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Driver Registration - Other Buses</title>
+
+<link rel="icon" type="image/png" href="logo.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+font-family:Arial;
+background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") no-repeat center;
+background-size:cover;
+margin:0;
+color:white;
+}
+
+.container{
+background:rgba(0,0,0,0.7);
+max-width:500px;
+margin:40px auto;
+padding:25px;
+border-radius:10px;
+}
+
+h1{
+text-align:center;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:none;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:12px;
+font-size:18px;
+background:#ff5733;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#c70039;
+}
+
+</style>
+
+<script>
+
+function submitForm(){
+alert("Driver Information Submitted Successfully");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Driver Registration</h1>
+
+<form
+action="https://formsubmit.co/chaitaliroykarjee@gmail.com" method="POST">
+
+<label>1) What is your Name?</label>
+<input type="text" required>
+
+<label>2) From where are you?</label>
+<input type="text" required>
+
+<label>3) Do you own a car or Bus?</label>
+<select>
+<option>Car</option>
+<option>Bus</option>
+<option>No Vehicle</option>
+</select>
+
+<label>4) Name of the vehicle?</label>
+<input type="text">
+
+<label>5) Which vehicle do you want to drive?</label>
+<select>
+<option>Bus</option>
+<option>4 Wheeler</option>
+</select>
+
+<label>6) Do you have a license?</label>
+<select>
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>7) Are you Driver or Conductor?</label>
+<select>
+<option>Driver</option>
+<option>Conductor</option>
+</select>
+
+<label>8) Your Phone Number?</label>
+<input type="tel" placeholder="Enter your phone number" required>
+
+<br><br>
+
+<a href="confirmation.html">
+<button type="button">Submit</button>
+</a>
+
+</form>
+
+</div>
+
+</body>
+</html>

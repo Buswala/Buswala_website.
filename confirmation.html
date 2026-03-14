@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Booking Confirmed</title>
+
+<link rel="icon" type="image/png" href="logo.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+background:url("https://images.unsplash.com/photo-1509749837427-ac94a2553d0e") no-repeat center;
+background-size:cover;
+color:white;
+}
+
+.container{
+margin-top:150px;
+}
+
+button{
+padding:15px;
+font-size:18px;
+background:#ff5733;
+color:white;
+border:none;
+border-radius:6px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>✅ Booking Confirmed</h1>
+
+<h2>Thanks for Booking with Buswala</h2>
+
+<p>Have a safe journey 🚌</p>
+
+<p>Buswala team will contact you soon.</p>
+<h2>Rate Your Experience</h2>
+
+<div class="rating">
+<span onclick="rate(1)">⭐</span>
+<span onclick="rate(2)">⭐</span>
+<span onclick="rate(3)">⭐</span>
+<span onclick="rate(4)">⭐</span>
+<span onclick="rate(5)">⭐</span>
+</div>
+
+<p id="ratingValue"></p>
+
+<h3>Write your feedback</h3>
+
+<textarea id="feedback" rows="4" cols="40" placeholder="Write your experience here..."></textarea>
+
+<br><br>
+
+<button onclick="submitFeedback()">Submit Feedback</button>
+
+<p id="message"></p>
+
+<script>
+
+function rate(stars){
+document.getElementById("ratingValue").innerHTML =
+"You rated: " + stars + " star(s)";
+}
+
+function submitFeedback(){
+let feedback = document.getElementById("feedback").value;
+
+document.getElementById("message").innerHTML =
+"Thank you for your feedback!";
+}
+
+</script>
+
+<a href="index.html">
+<button>Back to Home</button>
+</a>
+
+</div>
+
+<footer style="margin-top:150px; background:rgba(0,0,0,0.6); padding:20px; color:white;">
+
+<p><b>Owner:</b> Nirman Roy</p>
+
+<p><b>Co-founder:</b> Prithwish Saha</p>
+
+<p><b>Instagram:</b> Buswala_official</p>
+
+<p><b>YouTube:</b> Buswala_official</p>
+
+<p><b>Other Platforms:</b> Buswala_official</p>
+
+</body>
+</html>

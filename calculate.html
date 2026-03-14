@@ -1,0 +1,27 @@
+<link rel="icon" type="image/png" href="logo.png">
+
+<h3>Calculate Fare</h3>
+
+Enter Distance:
+<input type="number" id="distance">
+
+<br><br>
+
+<button onclick="fare()">Calculate Fare</button>
+
+<p id="total"></p>
+
+<script>
+
+function fare(){
+
+let y = document.getElementById("distance").value;
+
+let total = (y * 150) + 1500;
+
+document.getElementById("total").innerHTML =
+"Total Fare: ₹ " + total;
+
+}
+
+</script>
